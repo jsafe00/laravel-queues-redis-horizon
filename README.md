@@ -9,10 +9,6 @@
 ### In the root folder:
 
 ```
-docker-compose --build
-```
-
-```
 docker-compose up -d
 ```
 
