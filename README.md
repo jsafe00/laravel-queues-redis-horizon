@@ -2,15 +2,11 @@
 
 # Setup Laravel 8 Queues using Redis and Horizon
 
-## I used docker-template from https://github.com/ahmedash95/laravel-docker-template with few changes in Dockerfile since I'm using Laravel 8. 
+### I used docker-template from https://github.com/ahmedash95/laravel-docker-template with few changes in Dockerfile since I'm using Laravel 8 and php 8. 
 
 ### To execute:
 
 ### In the root folder:
-
-```
-docker-compose --build
-```
 
 ```
 docker-compose up -d
@@ -23,7 +19,7 @@ docker-compose exec -it {container_name} bash
 ```
 
 ```
-php artisan db:seed
+php artisan migrate:refresh --seed
 ```
 
 ### Run Horizon
