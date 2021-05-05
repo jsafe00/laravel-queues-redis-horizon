@@ -34,7 +34,7 @@ class SendUserEmail implements ShouldQueue
      */
     public function handle()
     {
-        Redis::throttle('my-mailtrap')->allow(2)->every(1)->then(function () {
+        Redis::throttle('key')->allow(10)->every(60)->then(function () {
         $recipient = 'josafebalili@gmail.com';
         
         Mail::to($recipient)->send(new EmailsSent());

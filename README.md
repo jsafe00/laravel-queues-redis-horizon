@@ -37,6 +37,7 @@ Execute project in the browser:
 ```
 localhost:8080/users/export
 ```
-### TODO
 
-- [ ] Tutorial
+### Tutorial
+
+https://josafebalili.com/posts/laravel-queues-redis-horizon/
