@@ -34,6 +34,3 @@ Execute project in the browser:
 localhost:8080/users/export
 ```
 
-### Tutorial
-
-https://josafebalili.com/posts/laravel-queues-redis-horizon/
